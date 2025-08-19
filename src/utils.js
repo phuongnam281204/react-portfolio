@@ -1,3 +1,4 @@
 export const getImageUrl = (path) => {
-  return new URL(`./assets/${path}`, import.meta.url).href;
+  // Đơn giản hóa bằng cách sử dụng đường dẫn tương đối
+  return `../assets/${path}`;
 };
