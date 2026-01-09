@@ -38,6 +38,12 @@
   gap: 25px;
 }
 
+.link img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
 .link a {
   color: var(--color-text);
   text-decoration: none;
