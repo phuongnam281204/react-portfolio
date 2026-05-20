@@ -1,26 +1,51 @@
 [
   {
-    "title": "Project A",
+    "title": "BookStore App",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "Full-stack bookstore with storefront search and product details, cart/checkout, admin management for books/orders/users, and email-based password reset.",
+    "skills": [
+      "React",
+      "Vite",
+      "Tailwind",
+      "DaisyUI",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT"
+    ],
+    "demo": "https://github.com/phuongnam281204/bookStoreApp-master",
+    "source": "https://github.com/phuongnam281204/bookStoreApp-master"
   },
   {
-    "title": "Project B",
+    "title": "Amazon Clone",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "Amazon-style e-commerce app with authentication, product search/filtering, cart and checkout, orders, and an admin panel for products and order status.",
+    "skills": [
+      "Flutter",
+      "Provider",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Cloudinary"
+    ],
+    "demo": "https://github.com/phuongnam281204/Amazon-",
+    "source": "https://github.com/phuongnam281204/Amazon-"
   },
   {
-    "title": "Project C",
+    "title": "ChatApp MERN",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "Real-time chat app with separate frontend/backend, chat APIs, JWT-based auth, and Docker Compose + Nginx deployment targeting MongoDB Atlas.",
+    "skills": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Docker",
+      "Nginx"
+    ],
+    "demo": "https://github.com/phuongnam281204/ChatApp-Mern",
+    "source": "https://github.com/phuongnam281204/ChatApp-Mern"
   }
 ]

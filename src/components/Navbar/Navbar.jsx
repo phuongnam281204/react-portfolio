@@ -2,14 +2,17 @@ import React, { useState } from "react";
 
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import { useLanguage } from "../../i18n.jsx";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+  const nextLanguage = language === "en" ? "vi" : "en";
 
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        {t.nav.title}
       </a>
       <div className={styles.menu}>
         <img
@@ -27,18 +30,26 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{t.nav.about}</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#experience">{t.nav.experience}</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">{t.nav.projects}</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{t.nav.contact}</a>
           </li>
         </ul>
+        <button
+          type="button"
+          className={styles.langToggle}
+          onClick={() => setLanguage(nextLanguage)}
+          aria-label={t.nav.switchTo}
+        >
+          {t.nav.langShort}
+        </button>
       </div>
     </nav>
   );

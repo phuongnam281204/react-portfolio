@@ -2,15 +2,18 @@ import React from "react";
 
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
+import { useLanguage } from "../../i18n.jsx";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className={styles.container}>
       <img
         src={getImageUrl(imageSrc)}
-        alt={`Image of ${title}`}
+        alt={`${t.projects.imageAlt} ${title}`}
         className={styles.image}
       />
       <h3 className={styles.title}>{title}</h3>
@@ -26,10 +29,10 @@ export const ProjectCard = ({
       </ul>
       <div className={styles.links}>
         <a href={demo} className={styles.link}>
-          Demo
+          {t.projects.demo}
         </a>
         <a href={source} className={styles.link}>
-          Source
+          {t.projects.source}
         </a>
       </div>
     </div>
