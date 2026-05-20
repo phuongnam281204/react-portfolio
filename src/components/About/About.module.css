@@ -22,11 +22,22 @@
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  gap: 36px;
 }
 
-.aboutImage {
-  width: 35%;
+.slideshow {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.slideImage {
+  width: 90%;
+  max-width: 520px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .aboutItems {
@@ -77,8 +88,8 @@
     flex-direction: column;
   }
 
-  .aboutImage {
-    display: none;
+  .slideshow {
+    width: 100%;
   }
 
   .aboutItems {
