@@ -14,7 +14,7 @@ const translations = {
     hero: {
       title: "Hi, I'm Phuong Nam (Brazet)",
       description:
-        "I'm a full-stack developer with 0 years of experience using React and NodeJS. Reach out if you'd like to learn more!",
+        "I'm Tran Phuong Nam, a Bachelor's graduate in Information Technology with 6 months of professional experience in frontend development. I specialize in React.js, building clean and responsive user interfaces that deliver great user experiences. Currently seeking a junior frontend developer role where I can continue growing and contribute to meaningful products.",
       contactBtn: "Contact Me",
       imageAlt: "Hero image of me",
     },
@@ -74,7 +74,7 @@ const translations = {
     hero: {
       title: "Xin chào, mình là Phương Nam (Brazet)",
       description:
-        "Mình là full-stack developer với 0 năm kinh nghiệm về React và NodeJS. Hãy liên hệ nếu bạn muốn tìm hiểu thêm!",
+        "Mình là Trần Phương Nam, cử nhân ngành Công nghệ thông tin với 6 tháng kinh nghiệm thực tế về phát triển Frontend. Mình chuyên về React.js, thiết kế giao diện người dùng tối giản và responsive mang lại trải nghiệm tuyệt vời. Hiện tại mình đang tìm kiếm vị trí Junior Frontend Developer để tiếp tục phát triển bản thân và đóng góp vào các sản phẩm ý nghĩa.",
       contactBtn: "Liên hệ",
       imageAlt: "Ảnh đại diện của mình",
     },
