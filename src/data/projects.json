@@ -1,7 +1,7 @@
 [
   {
     "title": "BookStore App",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/bookStore.png",
     "description": "Full-stack bookstore with storefront search and product details, cart/checkout, admin management for books/orders/users, and email-based password reset.",
     "skills": [
       "React",
@@ -18,7 +18,7 @@
   },
   {
     "title": "Amazon Clone",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/amazone.png",
     "description": "Amazon-style e-commerce app with authentication, product search/filtering, cart and checkout, orders, and an admin panel for products and order status.",
     "skills": [
       "Flutter",

@@ -1,7 +1,7 @@
 export const getProjects = (language) => [
   {
     title: "BookStore App",
-    imageSrc: "projects/project.png",
+    imageSrc: "projects/bookStore.png",
     description:
       language === "vi"
         ? "Ứng dụng bán sách full-stack với tìm kiếm và chi tiết sản phẩm, giỏ hàng/checkout, quản trị sách/đơn hàng/người dùng, và reset mật khẩu qua email."
@@ -16,12 +16,12 @@ export const getProjects = (language) => [
       "Mongoose",
       "JWT",
     ],
-    demo: "https://github.com/phuongnam281204/bookStoreApp-master",
+    demo: "https://brazet.me",
     source: "https://github.com/phuongnam281204/bookStoreApp-master",
   },
   {
     title: "Amazon Clone",
-    imageSrc: "projects/project.png",
+    imageSrc: "projects/amazone.png",
     description:
       language === "vi"
         ? "Ứng dụng thương mại điện tử kiểu Amazon với đăng nhập, tìm kiếm/lọc sản phẩm, giỏ hàng và thanh toán, đơn hàng, và admin quản lý sản phẩm/trạng thái đơn hàng."
