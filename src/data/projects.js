@@ -16,7 +16,7 @@ export const getProjects = (language) => [
       "Mongoose",
       "JWT",
     ],
-    demo: "https://brazet.me",
+    demo: "https://bookstore.brazet.me",
     source: "https://github.com/phuongnam281204/bookStoreApp-master",
   },
   {
