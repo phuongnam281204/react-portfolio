@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
-import { useLanguage } from "../../i18n.jsx";
+import { useLanguage } from "../../use-language";
 
 export const Contact = () => {
   const { t } = useLanguage();

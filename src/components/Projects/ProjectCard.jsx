@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
-import { useLanguage } from "../../i18n.jsx";
+import { useLanguage } from "../../use-language";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },

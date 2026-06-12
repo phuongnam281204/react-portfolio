@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
-import { useLanguage } from "../../i18n.jsx";
+import { useLanguage } from "../../use-language";
 
 export const About = () => {
   const { t } = useLanguage();

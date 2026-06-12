@@ -4,7 +4,7 @@ import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import { getHistory } from "../../data/history";
 import { getImageUrl } from "../../utils";
-import { useLanguage } from "../../i18n.jsx";
+import { useLanguage } from "../../use-language";
 
 export const Experience = () => {
   const { language, t } = useLanguage();

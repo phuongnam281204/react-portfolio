@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 
 import { getProjects } from "../../data/projects";
 import { ProjectCard } from "./ProjectCard";
-import { useLanguage } from "../../i18n.jsx";
+import { useLanguage } from "../../use-language";
 
 export const Projects = () => {
   const { language, t } = useLanguage();

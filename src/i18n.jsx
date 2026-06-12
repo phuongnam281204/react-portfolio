@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
+
+import { LanguageContext } from "./language-context";
 
 const translations = {
   en: {
@@ -16,6 +18,7 @@ const translations = {
       description:
         "I'm Tran Phuong Nam, a Bachelor's graduate in Information Technology with 6 months of professional experience in frontend development. I specialize in React.js, building clean and responsive user interfaces that deliver great user experiences. Currently seeking a fresher frontend developer role where I can continue growing and contribute to meaningful products.",
       contactBtn: "Contact Me",
+      cvBtn: "My CV",
       imageAlt: "Hero image of me",
     },
     about: {
@@ -76,6 +79,7 @@ const translations = {
       description:
         "Mình là Trần Phương Nam, cử nhân ngành Công nghệ thông tin với 6 tháng kinh nghiệm thực tế về phát triển Frontend. Mình chuyên về React.js, thiết kế giao diện người dùng tối giản và responsive mang lại trải nghiệm tuyệt vời. Hiện tại mình đang tìm kiếm vị trí Fresher Frontend Developer để tiếp tục phát triển bản thân và đóng góp vào các sản phẩm ý nghĩa.",
       contactBtn: "Liên hệ",
+      cvBtn: "My CV",
       imageAlt: "Ảnh đại diện của mình",
     },
     about: {
@@ -123,25 +127,13 @@ const translations = {
   },
 };
 
-const LanguageContext = createContext(null);
-
 export const LanguageProvider = ({ children, defaultLanguage = "en" }) => {
   const [language, setLanguage] = useState(defaultLanguage);
-
   const t = useMemo(() => translations[language], [language]);
   const value = useMemo(() => ({ language, setLanguage, t }), [language, t]);
-
   return (
     <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error("useLanguage must be used within LanguageProvider");
-  }
-  return context;
 };
